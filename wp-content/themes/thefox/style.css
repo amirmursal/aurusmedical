@@ -2099,7 +2099,7 @@ header.nav_type_9 .header_current_cart:hover .cdp_2, #header_container .nav_type
 	position: relative;
 	display: block;
 	padding: 28px 0px 32px 0px;
-	margin:0 18px;
+	margin:0 10px;
 	border-top:5px solid rgba(0,0,0,0);
 	font-size:13px;
 	font-weight:900;
@@ -2113,6 +2113,7 @@ header.nav_type_9 .header_current_cart:hover .cdp_2, #header_container .nav_type
 	float:left;
 	z-index:2000;
 }
+
 header.nav_type_9 #searchtop {
 	float: right;
 	padding: 32px 0px 29px 23px;
