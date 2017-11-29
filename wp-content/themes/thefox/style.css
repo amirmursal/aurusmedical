@@ -12433,3 +12433,16 @@ form div {
 div form:first-child, form div:first-child {
 	margin-top: 0px;
 }
+
+.ReadMoreButton {
+	background-color:  orangered;
+	border: none;
+	color: white;
+	padding: 10px 6px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
