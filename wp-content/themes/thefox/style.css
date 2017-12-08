@@ -9258,7 +9258,7 @@ p.rp_date {
 }
 .thefox_social_widget_text p {
 	margin-botton:17px;
-}
+	}
 .thefox_social_widget_icons div {
 	width: 37px!important;
 	height: 37px !important;
@@ -9413,6 +9413,7 @@ p.rp_date {
 }
 .textwidget p {
 	margin-bottom:17px;
+	color: #292323;
 }
 /************************************************************************************
 
