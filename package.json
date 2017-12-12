@@ -9,7 +9,7 @@
   },  
   "scripts": {
     "start" : "lite-server"
-  }
+  },
   "dependencies": {
     "lite-server": "^2.3.0"
   }
