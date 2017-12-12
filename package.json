@@ -6,12 +6,11 @@
   "engines": {
     "node": "8.9.1",
     "npm": "5.5.1"
-  },  
-  "scripts": {
-    "start": "webpack-dev-server"
   },
-  "dependencies": {   
-	"webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.3"
+  "scripts": {
+    "start": "lite-server"
+  },
+  "dependencies": {
+    "lite-server": "^2.3.0"
   }
 }
