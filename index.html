@@ -28,6 +28,9 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="wp-content/themes/thefox/js/jquery.min.js"></script>
+	<script src="wp-content/themes/thefox/js/bootstrap.min.js"></script>
 <link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
 <link rel='stylesheet' id='acx_fsmi_styles-css'  href='wp-content/plugins/floating-social-media-icon/css/style2cac.css?v=4.2.6&amp;ver=4.9' type='text/css' media='all' />
 <link rel='stylesheet' id='rs-plugin-settings-css'  href='wp-content/plugins/revslider/public/assets/css/settings.css' type='text/css' media='all' />
@@ -269,7 +272,7 @@ background: rgba(0, 0, 0, 0.21); color:#fff;}.sp_left:hover,.sp_right:hover{back
 <li class="   menu-item menu-item-type-post_type menu-item-object-page menu-item-24 "><a href="contact-us/index.html">Contact Us</a></li>
 <!--<li><a style="background-color: orangered; padding: 10px 10px; color: white; margin-top: 15px;" href="#">Call us</a></li>-->
 		 <li> <img width="20px" style="margin-top: 15px;" src="wp-content/themes/thefox/images/dial_phone_telephone_call-512.png" />&nbsp;<span>+111 111 111</span><br/><span>Call us for enquiry  </span></li>
-<li><a style="background-color: gray; padding: 10px 10px; color: white; margin-top: 15px;" href="contact-us/index.html">Request a Proposal</a></li>
+<li><a style="background-color: gray; padding: 10px 10px; color: white; margin-top: 15px;" data-toggle="modal" data-target="#myModal">Request a Proposal</a></li>
 </ul>
 
 	  </nav>
@@ -277,7 +280,83 @@ background: rgba(0, 0, 0, 0.21); color:#fff;}.sp_left:hover,.sp_right:hover{back
           </div>
     </header>
   <!-- header END-->
-  </div><style type="text/css" >.page_title_ctn {padding-top:43px; padding-bottom:43px;}</style><div class="section def_section">
+  </div><style type="text/css" >.page_title_ctn {padding-top:43px; padding-bottom:43px;}</style>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title" style="color: orangered"><i class="fa fa-headphones" aria-hidden="true"></i>  Request a Call Back</h2>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+						 <input type="text" class="form-control" name="name" placeholder="Name *">
+						</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="organization" placeholder="organization *">
+							</div>
+						<div class="form-group">
+								<input type="number" class="form-control" name="phone" placeholder="Phone Number *">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" name="email" placeholder="Email *">
+							</div>
+
+						</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success">Submit</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Free practice -->
+	<div class="modal fade" id="freeModal" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title">Complimentary Practice Analysis</h2>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<input type="text" class="form-control" name="name" placeholder="Name *">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="organization" placeholder="organization *">
+						</div>
+						<div class="form-group">
+							<input type="number" class="form-control" name="phone" placeholder="Phone Number *">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" name="email" placeholder="Email *">
+						</div>
+						<div class="form-group">
+							<select>
+								<option>--Select One</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success">Submit</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="section def_section">
   <div class="wrapper section_wrapper">
  <div id="fw_c" class="clearfix tf_single_page">
    <div   class="vc_row wpb_row vc_row-fluid full-width-content ">
@@ -530,7 +609,7 @@ jsFileLocation:"//www.aurusmedical.com/wp-content/plugins/revslider/public/asset
                    <h6>This no-obligation ananlysis is designed to assess your current billing processes,<br/> identify revenu opportunities and improve financial performance</h6>
                </div>
                <div class="vc_span2 wpb_column vc_column_container">
-                   <button class="ReadMoreButton" style="margin-top: 20px;">Schedule Now</button>
+                   <button class="ReadMoreButton" style="margin-top: 20px;" data-toggle="modal" data-target="#freeModal">Schedule Now</button>
                </div>
            </div></div></div></div>
 	  <!-- Row Backgrounds --><div class="upb_color" data-bg-override="0" data-bg-color="rgba(10,10,10,0.49)" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false"  data-custom-vc-row=""  data-vc="5.0.1"  data-is_old_vc=""  data-theme-support=""   data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""    ></div><div   class="vc_row wpb_row vc_row-fluid  ">
@@ -598,13 +677,20 @@ jsFileLocation:"//www.aurusmedical.com/wp-content/plugins/revslider/public/asset
 			</div>            </div>
 
             <div class="widget_wrap">
-      <div class="widget widget_text"><h2 style="color: #00A8FF">Contact Us</h2><div class="sc_small_line widget_line"><span class="small_l_left"></span></div>			<div class="textwidget"><p>We’d love to hear from you.</p>
-<hr>
-<i class="fa fa-location-arrow" aria-hidden="true"></i> New Jersey, USA | <i class="fa fa-location-arrow" aria-hidden="true"></i> Maryland, USA | <i class="fa fa-location-arrow" aria-hidden="true"></i> Mumbai, India</p>
-<hr />
-<p><i class="fa fa-phone" aria-hidden="true"></i> 8898234020</p>
-<hr>
+      <div class="widget widget_text"><h2 style="color: #00A8FF; margin-bottom: 20px;">North American Headquarters</h2>		<div class="textwidget">
+<p><i class="fa fa-location-arrow" aria-hidden="true"></i> New Jersey, USA<br/>
+<i class="fa fa-phone" aria-hidden="true"></i> 8898234020<br/>
 <i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:sales@aurusmedical.com"> sales@aurusmedical.com</a></p>
+		  <hr/><br/>
+		  <h2 style="color: #00A8FF; margin-bottom: 20px;">North American Headquarters</h2>
+		  <p><i class="fa fa-location-arrow" aria-hidden="true"></i> New Jersey, USA<br/>
+			  <i class="fa fa-phone" aria-hidden="true"></i> 8898234020<br/>
+			  <i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:sales@aurusmedical.com"> sales@aurusmedical.com</a></p>
+		  <hr/><br/>
+		  <h2 style="color: #00A8FF; margin-bottom: 20px;">North American Headquarters</h2>
+		  <p><i class="fa fa-location-arrow" aria-hidden="true"></i> New Jersey, USA<br/>
+			  <i class="fa fa-phone" aria-hidden="true"></i> 8898234020<br/>
+			  <i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:sales@aurusmedical.com"> sales@aurusmedical.com</a></p>
 </div>
 		</div>
 		        </div>
@@ -616,7 +702,7 @@ jsFileLocation:"//www.aurusmedical.com/wp-content/plugins/revslider/public/asset
 						{
 							width:40px;
 						}
-					</style><div id='acurax_si_simple' class='acx_fsmi_float_fix widget-acx-social-icons-widget-2-widget' style='text-align:left;'><a href='#' target='_blank'  title='Visit Us On Facebook'><img src='wp-content/plugins/floating-social-media-icon/images/themes/29/facebook.png' style='border:0px; alt='Visit Us On Facebook' height='40px' width='40px' /></a><a href='#' target='_blank'  title='Visit Us On Linkedin'><img src='wp-content/plugins/floating-social-media-icon/images/themes/29/linkedin.png' style='border:0px;' alt='Visit Us On Linkedin' height='40px' width='40px' /></a><a href='http://www.twitter.com/#' target='_blank'   title='Visit Us On Twitter'><img src='wp-content/plugins/floating-social-media-icon/images/themes/29/twitter.png' style='border:0px;' alt='Visit Us On Twitter' height='40px' width='40px' /></a><a href='#' target='_blank'   title='Visit Us On Google Plus'><img src='wp-content/plugins/floating-social-media-icon/images/themes/29/googleplus.png' style='border:0px;' alt='Visit Us On Google Plus' height='40px' width='40px' /></a></div><br/>
+					</style><div id='acurax_si_simple' class='acx_fsmi_float_fix widget-acx-social-icons-widget-2-widget' style='text-align:left;'><a href='#' target='_blank'  title='Visit Us On Facebook'><img src='wp-content/plugins/floating-social-media-icon/images/themes/29/facebook.png' alt='Visit Us On Facebook' /></a><a href='#' target='_blank'  title='Visit Us On Linkedin'><img src='wp-content/plugins/floating-social-media-icon/images/themes/29/linkedin.png' style='border:0px;' alt='Visit Us On Linkedin' height='40px' width='40px' /></a><a href='http://www.twitter.com/#' target='_blank'   title='Visit Us On Twitter'><img src='wp-content/plugins/floating-social-media-icon/images/themes/29/twitter.png' style='border:0px;' alt='Visit Us On Twitter' height='40px' width='40px' /></a><a href='#' target='_blank'   title='Visit Us On Google Plus'><img src='wp-content/plugins/floating-social-media-icon/images/themes/29/googleplus.png' style='border:0px;' alt='Visit Us On Google Plus' height='40px' width='40px' /></a></div><br/>
 						<img src="wp-content/themes/thefox/images/TRUSTe1.png" width="200px"/>
 						<img src="wp-content/themes/thefox/images/STAAH_Beta_STAAH_Beta_PCIandcompliance.png" width="200px"/>
 					</div>
@@ -735,6 +821,7 @@ var zilla_likes = {"ajaxurl":"https:\/\/www.aurusmedical.com\/wp-admin\/admin-aj
 var wpcf7 = {"apiSettings":{"root":"https:\/\/www.aurusmedical.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
 /* ]]> */
 </script>
+
 <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
 <script type='text/javascript' src='wp-includes/js/wp-embed.min.js'></script>
 <script type='text/javascript' src='wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js'></script>
@@ -742,5 +829,6 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/www.aurusmedical.com\/wp-json\/con
 <script type='text/javascript' src='wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js'></script>
 <script type='text/javascript' src='wp-content/plugins/Ultimate_VC_Addons/assets/min-js/custom.min.js'></script>
 <script type='text/javascript' src='wp-content/themes/thefox/includes/4k-icons/js/script-ck.js'></script>
+
 </body>
 </html>

@@ -9,7 +9,7 @@ z-index:10000;
 /*margin-left:1px;*/
 /*border:0px !important;*/
 /*background:none !important;*/
-box-shadow: 2px 2px #888888;
+box-shadow: 2px 2px 20px 0px #888888;
 }
 #divBottomRight img:hover, #acurax_si_simple img:hover, #short_code_si_icon img:hover
 {
