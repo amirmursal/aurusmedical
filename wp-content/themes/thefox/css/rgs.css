@@ -24,7 +24,7 @@
 
 
 /* DEFAULT ROW STYLES */
-.row, div.clear { padding-bottom: 24px; } /* set according to preference*/
+.row, div.clear {/* padding-bottom: 24px; */} /* set according to preference*/
 			
 								  
 /* DEFAULT COLUMN STYLES */
